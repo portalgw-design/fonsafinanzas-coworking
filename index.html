@@ -268,7 +268,7 @@ function mostrarFoto(sec, i) {
   const g = grupos[sec.dataset.g]; const f = g.fotos[i]; fotoActual[sec.dataset.g] = i;
   const img = sec.querySelector('.stage img'); img.style.opacity = 0;
   const pre = new Image(); pre.onload = pre.onerror = () => { img.src = pre.src; img.alt = `${g.espacio} · ${f.producto}`; img.style.opacity = 1; }; pre.src = u(f.web);
-  sec.querySelector('.prod').innerHTML = `${f.producto || nombre(g.espacio)}<small>Foto ${i + 1} de ${g.fotos.length}${f.ia ? ' · ambientación de referencia' : ' · foto real'}</small>`;
+  sec.querySelector('.prod').innerHTML = `${f.producto || nombre(g.espacio)}<small>Foto ${i + 1} de ${g.fotos.length}</small>`;
   sec.querySelectorAll('.thumbs button').forEach((b, k) => b.classList.toggle('on', k === i));
 }
 document.querySelectorAll('.esp').forEach(sec => {
