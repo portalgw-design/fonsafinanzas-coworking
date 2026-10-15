@@ -1,4 +1,3 @@
 # Coworking Fonsafinanzas
 
-Presentación interactiva de los espacios del coworking (fotos, ambientaciones y videos).
-Elaborada por el equipo Marknou.
+Presentación de los espacios del coworking Fonsafinanzas: auditorios, sala de juntas, oficinas y zona de bienestar.
